@@ -14,10 +14,10 @@ Demand service.
 Of course there is no easy standard for accessing this movie data, Tim
 Berners-Lee's wishes be damned. Here is how these services are accessed:
 
-  * Netflix: OData(!) via (http://odata.netflix.com)
+  * Netflix: OData(!) via [odata.netflix.com](http://odata.netflix.com)
   * Amazon: [Product Advertising(?) API](http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/)
   * Hulu: Some hack of their publisher tool endpoint
-  * iTunes: Their Store Web Service Search API via (http://www.apple.com/itunesaffiliates/API/AffiliatesSearch2.1.pdf)
+  * iTunes: Their Store Web Service Search API via [AffiliatesSearch2.1.pdf](http://www.apple.com/itunesaffiliates/API/AffiliatesSearch2.1.pdf)
 
 ## Usage
 

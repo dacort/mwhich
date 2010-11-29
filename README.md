@@ -25,11 +25,12 @@ This is very bare bones right now:
 
 To create a basic MWhich instance:
 
-`m = MWhich::Client.new`
+    m = MWhich::Client.new
 
 Search for a movie:
 
-`m.search("The Prestige")`
+    m.search("The Prestige")
+    # => {:amazon=>[], :hulu=>["film_trailer: Trailer - Not on hulu!", "film_trailer: Teaser Trailer - Not on hulu!", "film_trailer: Spot 3 - Not on hulu!", "film_trailer: Spot 2 - Not on hulu!", "film_trailer: Spot 1 - Not on hulu!", "film_trailer: Spot 4 - Not on hulu!", "film_trailer: Trailer - Not on hulu!", "film_trailer: Video - Not on hulu!", "clip: The Prestige - Not on hulu!", "clip: The Prestige - Not on hulu!"], :itunes=>["feature-movie: The Prestige ($9.99)"], :netflix=>["Movie: The Prestige"]} 
 
 At this time, this merely returns a hash of key/value pairs indicating which
 services the movie or TV show was found on. The value is a simple string with
@@ -46,5 +47,6 @@ Only want to search Netflix and Hulu?
 
     m = MWhich::Client.new(:services => [:netflix, :hulu])
     m.search("Knight Rider")
+    # => {:hulu=>["episode: I Love the Knight Life", "episode: Knight and the City", "episode: Fly By Knight", "episode: Fight Knight", "episode: Exit Light, Enter Knight", "episode: Knight to King's Pawn", "episode: Day Turns Into Knight", "episode: Don't Stop the Knight", "episode: Knight Fever", "episode: Knight of the Zodiac"], :netflix=>["Series: Knight Rider", "Series: Knight Rider"]} 
 
 This is obviously imperfect, but does provide an initial abstracted search.

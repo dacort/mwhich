@@ -9,7 +9,7 @@ place I look, even though had I taken another minute I would have found the
 same movie available via Netflix Instant Play, or cheaper on Amazon's Video on
 Demand service.
 
-## API Access
+## API ACCESS
 
 Of course there is no easy standard for accessing this movie data, Tim
 Berners-Lee's wishes be damned. Here is how these services are accessed:
@@ -19,7 +19,15 @@ Berners-Lee's wishes be damned. Here is how these services are accessed:
   * Hulu: Some hack of their publisher tool endpoint
   * iTunes: Their Store Web Service Search API via [AffiliatesSearch2.1.pdf](http://www.apple.com/itunesaffiliates/API/AffiliatesSearch2.1.pdf)
 
-## Usage
+## REQUIREMENTS
+
+You'll need the following gems:
+
+  * yajl-ruby
+  * nokogiri
+  * ruby-hmac
+
+## USAGE
 
 This is very bare bones right now:
 

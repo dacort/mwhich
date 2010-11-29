@@ -1,4 +1,8 @@
 MWhich -- Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks
+
+by Damon Cortesi
+
+[@dacort](http://twitter.com/dacort)
 ==========
 
 ## DESCRIPTION

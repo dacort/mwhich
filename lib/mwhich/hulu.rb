@@ -1,8 +1,13 @@
 module MWhich
   module Services
     class Hulu
-      def initialize
+      def initialize(options={})
         @endpoint_url = "http://m.hulu.com"
+        @ignore_media = []
+        if options[:ignore]
+          @ignore_media << 'film_trailer' if options[:ignore].include?:trailers
+          @ignore_media << 'clip' if options[:ignore].include?:clips
+        end
       end
       
       def search(title)
@@ -10,6 +15,7 @@ module MWhich
         
         titles = []
         results.xpath("//video").each do |result|
+          next if @ignore_media.include?result.css('video-type').inner_html
           append = ""
           if (ishulu = result.css('is-hulu'))
             append = " - Not on hulu!" if ishulu.inner_html == "0"

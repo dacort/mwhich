@@ -1,7 +1,7 @@
 module MWhich
   module Services
     class ITunes
-      def initialize
+      def initialize(options={})
         @endpoint = "http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStoreServices.woa/wa/wsSearch"
       end
       

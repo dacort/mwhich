@@ -2,7 +2,7 @@ module MWhich
   module Services
     class Netflix
       
-      def initialize
+      def initialize(options={})
         @endpoint = "http://odata.netflix.com/v1/Catalog/"
         @format = "json"
       end

@@ -30,7 +30,7 @@ To create a basic MWhich instance:
 Search for a movie:
 
     m.search("The Prestige")
-    # => {:amazon=>[], :hulu=>["film_trailer: Trailer - Not on hulu!", "film_trailer: Teaser Trailer - Not on hulu!", "film_trailer: Spot 3 - Not on hulu!", "film_trailer: Spot 2 - Not on hulu!", "film_trailer: Spot 1 - Not on hulu!", "film_trailer: Spot 4 - Not on hulu!", "film_trailer: Trailer - Not on hulu!", "film_trailer: Video - Not on hulu!", "clip: The Prestige - Not on hulu!", "clip: The Prestige - Not on hulu!"], :itunes=>["feature-movie: The Prestige ($9.99)"], :netflix=>["Movie: The Prestige"]} 
+    # => {:amazon=>[], :hulu=>[], :itunes=>["feature-movie: The Prestige ($9.99)"], :netflix=>["Movie: The Prestige"]}
 
 At this time, this merely returns a hash of key/value pairs indicating which
 services the movie or TV show was found on. The value is a simple string with

@@ -1,7 +1,7 @@
 module MWhich
   module Services
     class Amazon
-      def initialize
+      def initialize(options={})
         @endpoint_url = "http://webservices.amazon.com/onca/xml"
         @aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
         @aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']

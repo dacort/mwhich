@@ -9,10 +9,10 @@ module MWhich
           @ignore_media << 'clip' if options[:ignore].include?:clips
         end
       end
-      
+
       def search(title)
         results = request(title)
-        
+
         titles = []
         results.xpath("//video").each do |result|
           next if @ignore_media.include?result.css('video-type').inner_html
@@ -22,15 +22,15 @@ module MWhich
           end
           titles << "#{result.css('video-type').inner_html}: #{result.css('title').inner_html}#{append}"
         end
-        
+
         titles
       end
-      
+
       protected
-      
+
         def request(title)
           url = "#{@endpoint_url}/search?dp_identifier=hulu&query=#{URI::escape(title)}&items_per_page=10&page=1"
-          
+
           response = Net::HTTP.get_response(URI.parse(url))
           Nokogiri::XML(response.body)
         end

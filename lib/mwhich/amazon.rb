@@ -6,20 +6,20 @@ module MWhich
         @aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
         @aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
       end
-      
+
       def search(title)
         results = request(title)
-        
+
         titles = []
         results.css("Item").each do |result|
           titles << "#{result.css('ProductGroup').inner_html}: #{result.css('Title').inner_html}"
         end
-        
+
         titles
       end
-      
+
       protected
-      
+
         def request(title)
           params = {
             "Operation" => "ItemSearch",
@@ -32,11 +32,11 @@ module MWhich
           sorted_params = params.sort_by{|x,y| x}.map{|x,y| "#{x}=#{CGI::escape(y)}"}.join('&')
           signature = sign("GET\nwebservices.amazon.com\n/onca/xml\n#{sorted_params}").strip
           url = "#{@endpoint_url}?#{sorted_params}&Signature=#{CGI::escape(signature)}"
-          
+
           response = Net::HTTP.get_response(URI.parse(url))
           Nokogiri::XML(response.body)
         end
-        
+
         def sign(string)
           hmac = HMAC::SHA256.new(@aws_secret_access_key)
           hmac.update(string)

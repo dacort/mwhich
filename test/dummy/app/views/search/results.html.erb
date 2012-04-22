@@ -1,0 +1,11 @@
+<ul>
+  <% for service in @results.keys %>
+    <li>
+		<%= service %>
+		<ul>
+		<% for match in @results[service] %>
+			<li><%= match %></li>
+		<% end %>
+		</ul>
+	</li>
+<% end %>

@@ -7,18 +7,18 @@ require "mwhich/version"
 Gem::Specification.new do |s|
   s.name        = "mwhich"
   s.version     = MWhich::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["dacort", "connormontgomery", "jmooserific"]
   s.homepage    = "http://github.com/connormontgomery/mwhich"
-  s.summary     = "TODO: Summary of MWhich."
-  s.description = "TODO: Description of MWhich."
+  s.summary     = "Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks."
+  s.description = "MWhich was created because I'm lazy, and that laziness led to a loss of money. Many times I end up watching on movie on iTunes simply because it is the first place I look, even though had I taken another minute I would have found the same movie available via Netflix Instant Play, or cheaper on Amazon's Video on Demand service."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependancy "nokogiri", "~> 1.5.2"
-  s.add_dependancy "yajl-ruby", "~> 1.1.0"
-  s.add_dependancy "ruby-hmac", "~> 0.4.0"
+  s.add_dependency "rails"
+  s.add_dependency "nokogiri"
+  s.add_dependency "yajl-ruby"
+  s.add_dependency "ruby-hmac"
 
   s.add_development_dependency "sqlite3"
 end

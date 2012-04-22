@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
-  s.add_dependancy "nokogiri"
-  s.add_dependancy "yajl-ruby"
-  s.add_dependancy "ruby-hmac"
+  s.add_dependancy "nokogiri", "~> 1.5.2"
+  s.add_dependancy "yajl-ruby", "~> 1.1.0"
+  s.add_dependancy "ruby-hmac", "~> 0.4.0"
 
   s.add_development_dependency "sqlite3"
 end

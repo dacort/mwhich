@@ -3,13 +3,10 @@ MWhich -- Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks
 
 ## TODO
 
-### Moose
-
-Dig into amazon
-
-### Connor
-
-Dig into iTunes
+- gemify this
+  - make it return a hash
+- Dig into amazon [moose]
+- Dig into iTunes [connor]
 
 
 ## DESCRIPTION

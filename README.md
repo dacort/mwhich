@@ -3,11 +3,11 @@ MWhich -- Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks
 
 ## TODO
 
-#### Moose
+### Moose
 
 Dig into amazon
 
-#### Connor
+### Connor
 
 Dig into iTunes
 

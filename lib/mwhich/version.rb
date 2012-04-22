@@ -1,0 +1,3 @@
+module MWhich
+  VERSION = "0.0.1"
+end

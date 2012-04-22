@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = MWhich::VERSION
   s.authors     = ["TODO: Your name"]
   s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.homepage    = "http://github.com/connormontgomery/mwhich"
   s.summary     = "TODO: Summary of MWhich."
   s.description = "TODO: Description of MWhich."
 

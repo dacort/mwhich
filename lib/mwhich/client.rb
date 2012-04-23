@@ -3,7 +3,7 @@ module MWhich
 
     VALID_SERVICES = [:amazon,:hulu,:itunes,:netflix]
     SERVICE_MAP = {
-      :amazon => MWhich::Services::Amazon,
+      #:amazon => MWhich::Services::Amazon,
       :hulu => MWhich::Services::Hulu,
       :itunes => MWhich::Services::ITunes,
       :netflix => MWhich::Services::Netflix

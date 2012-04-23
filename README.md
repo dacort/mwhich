@@ -6,7 +6,7 @@ MWhich -- Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks
 - ~~gemify this~~ (to install, run "rake install")
   - make it return a hash
 - Dig into amazon [moose]
-- Dig into iTunes [connor]
+- ~~Dig into iTunes [connor]~~
 
 
 ## DESCRIPTION

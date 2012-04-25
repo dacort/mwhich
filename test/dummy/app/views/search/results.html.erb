@@ -1,9 +1,7 @@
 
 <% for service in @results.keys %>
 	<h2><%= service %></h2>
-	<ul class="thumbnails">
 		<% for match in @results[service]['results'] %>
-			<li class="span3">
 				<div class="thumbnail">
 					<%= image_tag match['artwork_url'] %>
 					<h5 class="title"><%= match['name'] %> (<%= match['release_date'].to_date.year %>)</h5>
@@ -11,7 +9,5 @@
 						<span class="purchase_option"><%= match['purchase_option'] %></span><span class="price"><%= number_to_currency(match['price']) %></span>
 					</p>
 				</div>
-			</li>
 		<% end %>
-	</ul>
 <% end %>

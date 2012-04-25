@@ -15,8 +15,12 @@
 body { padding-top: 60px; }
 
 .thumbnail {
+	width: 10em;
+	height: 10em;
+	float: left;
 	text-align: center;
-	padding: 5px;
+	margin: 5px;
+	overflow: hidden;
 }
 
 .thumbnail p span {

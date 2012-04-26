@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "nokogiri"
   s.add_dependency "yajl-ruby"
   s.add_dependency "ruby-hmac"
+  s.add_dependency "amazon-ecs"
 
   s.add_development_dependency "sqlite3"
 end

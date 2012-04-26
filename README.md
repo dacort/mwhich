@@ -5,7 +5,7 @@ MWhich -- Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks
 
 - ~~gemify this~~ (to install, run "rake install")
   - make it return a hash
-- Dig into amazon [moose]
+- ~~Dig into amazon [moose]~~ put your credentials in test/dummy/config/initializers/ecs.rb
 - ~~Dig into iTunes [connor]~~
 
 
@@ -23,7 +23,7 @@ Of course there is no easy standard for accessing this movie data, Tim
 Berners-Lee's wishes be damned. Here is how these services are accessed:
 
   * Netflix: OData(!) via [odata.netflix.com](http://odata.netflix.com)
-  * Amazon: [Product Advertising(?) API](http://docs.amazonwebservices.com/AWSECommerceService/latest/DG/)
+  * Amazon: ECS
   * Hulu: Some hack of their publisher tool endpoint
   * iTunes: Their Store Web Service Search API via [AffiliatesSearch2.1.pdf](http://www.apple.com/itunesaffiliates/API/AffiliatesSearch2.1.pdf)
 

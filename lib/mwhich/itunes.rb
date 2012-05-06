@@ -18,7 +18,7 @@ module MWhich
             'media_type' => media,
             'purchase_option' => 'rent', # change this
             'price' => r['trackPrice'],
-            'artwork_url' => r['artworkUrl60'],
+            'artwork_url' => r['artworkUrl100'],
             'release_date' => r['releaseDate']
           }
         end

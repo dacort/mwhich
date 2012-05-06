@@ -22,7 +22,7 @@ module MWhich
             'media_type' => item.get('ItemAttributes/Binding'),
             'purchase_option' => 'buy', # change this
             'price' => item.get('ItemAttributes/ListPrice/FormattedPrice'),
-            'artwork_url' => item.get('SmallImage/URL'),
+            'artwork_url' => item.get('MediumImage/URL'),
             'release_date' => item.get('ItemAttributes/ReleaseDate'),
             'url' => item.get('DetailPageURL')
           }

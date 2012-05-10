@@ -1,0 +1,17 @@
+
+<% for service in @results.keys %>
+	<div class="row">
+	<h2 class="span12"><%= service %></h2>
+		<% for match in @results[service]['results'] %>
+				<div class="thumbnail">
+					<%= link_to match['url'] do %>
+						<%= image_tag match['artwork_url'] %>
+						<h5 class="title"><%= match['name'] %> (<%= match['release_date'] ? match['release_date'].to_date.year : '' %>)</h5>
+						<p>
+							<span class="purchase_option"><%= match['purchase_option'] %></span><span class="price"><%= match['price'] %></span>
+						</p>
+					<% end %>
+				</div>
+		<% end %>
+	</div>
+<% end %>

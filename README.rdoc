@@ -1,3 +1,7 @@
+= NOTE: THIS CODE IS NO LONGER MAINTAINED
+Netflix shut down their public API. :(
+Please take a look at http://www.canistream.it and {this Ruby gem for canistream.it API}[https://github.com/KevinBongart/canistreamit].
+
 = MWhich 
 
 Because searching Netflix, Amazon, Hulu, and iTunes sucks rocks!
